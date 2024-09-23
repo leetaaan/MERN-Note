@@ -31,7 +31,7 @@ const AuthForm = ({ type }) => {
       });
       if (response.data && response.data.access_token) {
         localStorage.setItem("token", response.data.access_token);
-        navigate("/");
+        navigate("/home");
       }
     } catch (error) {
       if (
